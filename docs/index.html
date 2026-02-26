@@ -4,9 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KHIPU | Bóveda Segura y Privada</title>
+    <title>KHIPU OS | Bóveda de Seguridad y Privacidad Criptográfica</title>
     <meta name="description"
-        content="KHIPUS es tu bóveda criptográfica definitiva. Protege tus notas, archivos y contraseñas con encriptación de grado militar offline.">
+        content="KHIPU OS es la bóveda definitiva para proteger archivos, notas y contraseñas. Seguridad de grado militar, encriptación local offline y privacidad absoluta.">
+    <meta name="keywords"
+        content="KHIPU, KHIPU OS, seguridad, privacidad, encriptación, bóveda selectiva, protección de archivos, ciberseguridad, Mundo Cifrado">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://copilotgithib.github.io/KHIPU/">
+    <meta property="og:title" content="KHIPU OS | Privacidad Absoluta">
+    <meta property="og:description"
+        content="Protege tu vida digital con encriptación local de grado militar. Sin servidores, sin rastreo.">
+    <meta property="og:image" content="assets/logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="KHIPU OS | Seguridad Inquebrantable">
+    <meta property="twitter:description" content="La herramienta definitiva de privacidad offline.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo.png" type="image/png">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -78,11 +97,13 @@
         .brand img {
             width: 40px;
             height: 40px;
+            filter: brightness(0) invert(1) drop-shadow(0 0 8px var(--btn-glow));
         }
 
         .brand span {
             background: var(--accent-gradient);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -302,9 +323,9 @@
 
     <nav>
         <div class="brand">
-            <img src="./assets/logo.png" alt="KHIPU Logo"
+            <img src="./assets/logo.png" alt="KHIPU OS Logo"
                 onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMzhCREY4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBhdGggZD0iTTIxIDJ2NmwteCA2LS4wMSAwLTMgMyAzLTNoLTMuOTlMMiAxMnYtNiIvPjxwYXRoIGQ9Ik0zIDEzLjV2NyIvPjxwYXRoIGQ9Ik04IDE0LjV2NCIvPjxwYXRoIGQ9Ik0xMyAxM3Y0LjUiLz48cGF0aCBkPSJNMTggMTQuNXY3Ii8+PC9zdmc+'">
-            <span>KHIPUS</span>
+            <span>KHIPU OS</span>
         </div>
         <div class="nav-links">
             <a href="https://youtube.com/@Mundo_cifrado" target="_blank" class="btn btn-secondary"
@@ -316,31 +337,46 @@
 
     <section class="hero">
         <h1>Privacidad absoluta. <br><span>Seguridad inquebrantable.</span></h1>
-        <p>KHIPU es tu bóveda criptográfica definitiva. Guarda contraseñas y documentos con encriptación local de última
+        <p>KHIPU OS es la bóveda criptográfica definitiva para profesionales y usuarios conscientes de su privacidad.
+            Guarda contraseñas y documentos con encriptación local de última
             generación, asegurando que solo tú tengas acceso a tu información.</p>
 
         <div class="cta-container">
             <div class="dl-group">
                 <a href="https://github.com/copilotgithib/KHIPU/releases/download/v1.0.0/Khipu-V1.0.0.exe"
                     class="btn btn-primary">
-                    <i class="ph ph-windows-logo"></i> Descargar para Windows
+                    <i class="ph ph-windows-logo"></i> Windows
                 </a>
-                <span
-                    class="hash-info">SHA256:<br>826ae3cd136bf528ddf7b6c7217c03ca21e0d0f5d37631c9afccd2f7924715c9</span>
+                <span class="hash-info">
+                    v1.0.0 EXE | 24.2 MB<br>
+                    SHA256: 0d69e174da4632d4a70d8dab645b6b77899706f1e7313c18785f32bf379a09fa
+                </span>
             </div>
             <div class="dl-group">
-                <a href="https://github.com/copilotgithib/KHIPU/releases/download/v1.0.0/KHIPU-linux_V1.0.0_amd64.AppImage"
-                    class="btn btn-secondary">
-                    <i class="ph ph-linux-logo"></i> Descargar para Linux
+                <a href="https://github.com/copilotgithib/KHIPU/releases/download/v1.0.0/KHIPU-Linux_1.0.0_amd64.deb"
+                    class="btn btn-secondary" style="border-color: #2ecc71; color: #2ecc71;">
+                    <i class="ph ph-linux-logo"></i> Linux (.deb)
                 </a>
-                <span
-                    class="hash-info">SHA256:<br>707a704cf02c1a7fb45a8e0b71deeafcd1cc67bdaa8187321b109530c05c6729</span>
+                <span class="hash-info">
+                    v1.0.0 DEB | 11.7 MB<br>
+                    SHA256: cefa150946de975861aabf4bdfa6a8cfe80558f166d0f32fa0563bdd12d3ab13
+                </span>
+            </div>
+            <div class="dl-group">
+                <a href="https://github.com/copilotgithib/KHIPU/releases/download/v1.0.0/KHIPU-Linuxs_1.0.0_amd64.AppImage"
+                    class="btn btn-secondary">
+                    <i class="ph ph-linux-logo"></i> Linux (.AppImage)
+                </a>
+                <span class="hash-info">
+                    v1.0.0 AppImage | 80.6 MB<br>
+                    SHA256: 8433b4525404a2d121f5de9417125983bddf468608e4d1d693fe2fe721cb18d5
+                </span>
             </div>
         </div>
     </section>
 
     <section class="features" id="features">
-        <h2 class="section-title">¿Por qué elegir KHIPUS?</h2>
+        <h2 class="section-title">¿Por qué elegir KHIPU OS?</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">
@@ -397,7 +433,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Equipo KHIPUS. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Equipo KHIPU OS. Todos los derechos reservados.</p>
         <p style="margin-top: 1rem;">
             <a href="politica-privacidad.html"
                 style="color: var(--accent-color); text-decoration: none; font-size: 0.9rem;">Política de Privacidad y
